@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76A8E4A9294245BB005F1E5F /* smart_cleaner_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 76A8E4A8294245BB005F1E5F /* smart_cleaner_data.json */; };
+		76A8E4AB294245DD005F1E5F /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8E4AA294245DD005F1E5F /* DbHelper.swift */; };
 		E71C4F5D2936BB2D00007518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C4F5C2936BB2D00007518 /* AppDelegate.swift */; };
 		E71C4F5F2936BB2D00007518 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C4F5E2936BB2D00007518 /* SceneDelegate.swift */; };
 		E71C4F612936BB2D00007518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C4F602936BB2D00007518 /* ViewController.swift */; };
@@ -14,9 +16,12 @@
 		E71C4F662936BB2F00007518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71C4F652936BB2F00007518 /* Assets.xcassets */; };
 		E71C4F692936BB2F00007518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71C4F672936BB2F00007518 /* LaunchScreen.storyboard */; };
 		E766A60F293989F100C768D0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766A60E293989F100C768D0 /* TableViewController.swift */; };
+		E79990E4293BE2E700BD98FF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79990E3293BE2E700BD98FF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76A8E4A8294245BB005F1E5F /* smart_cleaner_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = smart_cleaner_data.json; path = ../../smart_cleaner_data.json; sourceTree = "<group>"; };
+		76A8E4AA294245DD005F1E5F /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
 		E71C4F592936BB2D00007518 /* SmartCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71C4F5C2936BB2D00007518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E71C4F5E2936BB2D00007518 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		E71C4F682936BB2F00007518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71C4F6A2936BB2F00007518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E766A60E293989F100C768D0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E79990E3293BE2E700BD98FF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		E71C4F5B2936BB2D00007518 /* SmartCleaner */ = {
 			isa = PBXGroup;
 			children = (
+				76A8E4A8294245BB005F1E5F /* smart_cleaner_data.json */,
 				E71C4F5C2936BB2D00007518 /* AppDelegate.swift */,
 				E71C4F5E2936BB2D00007518 /* SceneDelegate.swift */,
 				E71C4F602936BB2D00007518 /* ViewController.swift */,
@@ -66,6 +73,8 @@
 				E71C4F672936BB2F00007518 /* LaunchScreen.storyboard */,
 				E71C4F6A2936BB2F00007518 /* Info.plist */,
 				E766A60E293989F100C768D0 /* TableViewController.swift */,
+				E79990E3293BE2E700BD98FF /* TableViewCell.swift */,
+				76A8E4AA294245DD005F1E5F /* DbHelper.swift */,
 			);
 			path = SmartCleaner;
 			sourceTree = "<group>";
@@ -128,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A8E4A9294245BB005F1E5F /* smart_cleaner_data.json in Resources */,
 				E71C4F692936BB2F00007518 /* LaunchScreen.storyboard in Resources */,
 				E71C4F662936BB2F00007518 /* Assets.xcassets in Resources */,
 				E71C4F642936BB2D00007518 /* Main.storyboard in Resources */,
@@ -141,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79990E4293BE2E700BD98FF /* TableViewCell.swift in Sources */,
+				76A8E4AB294245DD005F1E5F /* DbHelper.swift in Sources */,
 				E71C4F612936BB2D00007518 /* ViewController.swift in Sources */,
 				E71C4F5D2936BB2D00007518 /* AppDelegate.swift in Sources */,
 				E71C4F5F2936BB2D00007518 /* SceneDelegate.swift in Sources */,

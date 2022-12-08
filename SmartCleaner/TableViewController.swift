@@ -8,9 +8,18 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    //MARK-: IBOutlets
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    let profiles = DBHelper().profiles
+    var getProgiles: [Profile]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "All Profiles"
+        navigationController?.navigationBar.prefersLargeTitles = true
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -18,12 +27,17 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    
+
+}
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,7 +47,7 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "profile", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "profiles", for: indexPath) as! TableViewCell
 
         // Configure the cell...
 
