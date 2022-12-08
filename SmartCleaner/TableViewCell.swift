@@ -10,9 +10,11 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     //MARK:- Outlets
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileDescription: UILabel!
+    @IBOutlet weak var profileName: UILabel!
     
-  
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

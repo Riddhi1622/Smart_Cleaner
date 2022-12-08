@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Wv-jV-Re0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Wv-jV-Re0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <imageReference key="selectedImage" image="gearshape.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QVj-m5-usr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -36,7 +37,7 @@
                         <imageReference key="selectedImage" image="person.3.sequence.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EqQ-27-hxE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -55,7 +56,7 @@
                         <imageReference key="image" image="house.fill" catalog="system"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GVQ-Lq-kq1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" systemColor="systemBlueColor"/>
@@ -68,22 +69,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn7-ht-asu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-678" y="184"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="jhf-E0-p4t">
-            <objects>
-                <viewController id="HdS-52-liT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WSd-3A-eFm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="a0P-K4-8dH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Home" id="b49-t1-6xd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfq-qs-AkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1862" y="882"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3ti-8Z-3Sl">
@@ -119,7 +104,7 @@
                         </searchBar>
                         <prototypes>
                             <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="profiles" rowHeight="170" id="1cX-qM-ecc" customClass="TableViewCell" customModule="SmartCleaner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="170"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1cX-qM-ecc" id="q5V-pQ-pyN" customClass="TableViewCell" customModule="SmartCleaner" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
@@ -153,6 +138,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.78039215689999997" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="profileDescription" destination="D79-c5-D1G" id="5Td-a8-bIC"/>
+                                    <outlet property="profileImage" destination="lj0-Dk-JBh" id="pZP-vM-aS3"/>
+                                    <outlet property="profileName" destination="p2S-kz-cIE" id="tOA-iD-oxm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -306,10 +296,10 @@
     </scenes>
     <resources>
         <image name="02" width="1200" height="1500"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="images" width="112" height="112.5"/>
-        <image name="person.3.sequence.fill" catalog="system" width="128" height="58"/>
+        <image name="person.3.sequence.fill" catalog="system" width="128" height="59"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
