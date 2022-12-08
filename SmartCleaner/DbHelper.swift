@@ -16,7 +16,6 @@ struct Profile: Codable {
     var name: String = ""
     var description: String = ""
     var wage: String = ""
-    var location: String = ""
     var image: String = ""
 }
 
