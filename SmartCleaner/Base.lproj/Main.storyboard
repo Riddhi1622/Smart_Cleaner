@@ -137,6 +137,7 @@
                                     <outlet property="profileDescription" destination="D79-c5-D1G" id="5Td-a8-bIC"/>
                                     <outlet property="profileImage" destination="lj0-Dk-JBh" id="pZP-vM-aS3"/>
                                     <outlet property="profileName" destination="p2S-kz-cIE" id="tOA-iD-oxm"/>
+                                    <segue destination="Kj3-Nk-Jlb" kind="show" identifier="navigateToSingleProfile" trigger="accessoryAction" id="ZwY-HM-s6R"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -150,6 +151,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpI-km-Nh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="276.81159420289856" y="906.69642857142856"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="P4M-Ym-b8L">
+            <objects>
+                <viewController id="Kj3-Nk-Jlb" customClass="ProfileViewController" customModule="SmartCleaner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4Z-vL-Fnw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QAX-Sm-XLY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S9M-az-v0x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXL-XU-FdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="1586"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Xgy-GX-IsN">

@@ -48,5 +48,10 @@ class TableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "navigateToSingleProfile", sender: profiles[indexPath.row])
+    }
+
 
 }
