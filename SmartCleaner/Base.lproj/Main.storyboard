@@ -159,14 +159,98 @@
                     <view key="view" contentMode="scaleToFill" id="P4Z-vL-Fnw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2S-CL-lkB">
+                                <rect key="frame" x="87" y="114" width="240" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mrs. Chihuahua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usw-NJ-loM">
+                                <rect key="frame" x="122" y="356" width="170" height="27.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Availability:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69H-u8-Vzc">
+                                <rect key="frame" x="76" y="607.5" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9V-NT-SjD">
+                                <rect key="frame" x="76" y="651.5" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly Pay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-z7-Uqk">
+                                <rect key="frame" x="76" y="698.5" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ake-kX-NR4">
+                                <rect key="frame" x="100" y="765.5" width="214" height="40.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send Request">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sendRequest:" destination="YZY-PQ-QNr" eventType="touchUpInside" id="zIX-jI-3wq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A very friendly and caring dog that will take care of all your stuff and make you really happy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEp-kT-gVA">
+                                <rect key="frame" x="81" y="465.5" width="252" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QAX-Sm-XLY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="trailing" secondItem="cEp-kT-gVA" secondAttribute="trailing" constant="81" id="0Hz-KE-BFC"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="120" id="2Dj-a2-jaY"/>
+                            <constraint firstItem="C9V-NT-SjD" firstAttribute="top" secondItem="69H-u8-Vzc" secondAttribute="bottom" constant="23" id="6L0-uu-X5R"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="top" secondItem="kdQ-z7-Uqk" secondAttribute="bottom" constant="24" id="9HB-DX-IaE"/>
+                            <constraint firstItem="cEp-kT-gVA" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="81" id="D6A-GT-TyW"/>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="trailing" secondItem="ake-kX-NR4" secondAttribute="trailing" constant="100" id="GaW-OV-KPS"/>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="bottom" secondItem="ake-kX-NR4" secondAttribute="bottom" constant="29" id="Mm2-IJ-pxp"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="top" secondItem="kdQ-z7-Uqk" secondAttribute="bottom" constant="46" id="Vsh-yT-GOA"/>
+                            <constraint firstItem="69H-u8-Vzc" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="76" id="YGI-r4-osx"/>
+                            <constraint firstItem="kdQ-z7-Uqk" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="76" id="YRE-ZZ-Q3r"/>
+                            <constraint firstItem="C9V-NT-SjD" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="76" id="ZDE-C9-9lz"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="100" id="eXr-Fo-M8o"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="top" secondItem="kdQ-z7-Uqk" secondAttribute="bottom" constant="46" id="gFk-cC-A51"/>
+                            <constraint firstItem="69H-u8-Vzc" firstAttribute="top" secondItem="cEp-kT-gVA" secondAttribute="bottom" constant="81" id="gS7-f3-lBp"/>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="bottom" secondItem="ake-kX-NR4" secondAttribute="bottom" constant="7" id="itr-hz-5no"/>
+                            <constraint firstItem="kdQ-z7-Uqk" firstAttribute="top" secondItem="C9V-NT-SjD" secondAttribute="bottom" constant="26" id="m5p-ym-0dD"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="leading" secondItem="QAX-Sm-XLY" secondAttribute="leading" constant="100" id="mn9-Zd-7r6"/>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="bottom" secondItem="ake-kX-NR4" secondAttribute="bottom" constant="7" id="n1g-b1-f8o"/>
+                            <constraint firstItem="ake-kX-NR4" firstAttribute="top" secondItem="kdQ-z7-Uqk" secondAttribute="bottom" constant="46" id="nIg-n6-Imo"/>
+                            <constraint firstItem="kdQ-z7-Uqk" firstAttribute="top" secondItem="C9V-NT-SjD" secondAttribute="bottom" constant="26" id="rmV-aE-kZ8"/>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="trailing" secondItem="ake-kX-NR4" secondAttribute="trailing" constant="120" id="tUM-PW-oQc"/>
+                            <constraint firstItem="QAX-Sm-XLY" firstAttribute="trailing" secondItem="ake-kX-NR4" secondAttribute="trailing" constant="100" id="teR-2u-NI6"/>
+                            <constraint firstItem="C9V-NT-SjD" firstAttribute="top" secondItem="69H-u8-Vzc" secondAttribute="bottom" constant="23" id="ymh-yH-mqv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="S9M-az-v0x"/>
+                    <connections>
+                        <outlet property="availability" destination="69H-u8-Vzc" id="QC8-j1-hOl"/>
+                        <outlet property="profileDescription" destination="cEp-kT-gVA" id="f4z-nz-BI2"/>
+                        <outlet property="profileImage" destination="y2S-CL-lkB" id="JM9-oq-Ceg"/>
+                        <outlet property="profileName" destination="Usw-NJ-loM" id="XHr-rn-5h8"/>
+                        <outlet property="services" destination="C9V-NT-SjD" id="sgs-bL-29E"/>
+                        <outlet property="wagePerHour" destination="kdQ-z7-Uqk" id="VQO-dm-jjD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXL-XU-FdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="277" y="1586"/>
+            <point key="canvasLocation" x="276.81159420289856" y="1585.7142857142856"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Xgy-GX-IsN">
