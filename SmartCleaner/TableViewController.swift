@@ -14,6 +14,9 @@ class TableViewController: UITableViewController {
     
     let profiles = DBHelper().profiles
     var getProgiles: [Profile]!
+    
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +53,18 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "navigateToSingleProfile", sender: profiles[indexPath.row])
+
+        let i = indexPath.row
+        let profile = getProgiles[i]
+
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as?
+            ProfileViewController {
+            vc.selectedImage = profile.image
+            vc.profileName?.text = profile.name
+            vc.profileDescription?.text = profile.description
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        //self.performSegue(withIdentifier: "navigateToSingleProfile", sender: profiles[indexPath.row])
     }
 
 

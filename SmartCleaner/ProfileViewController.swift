@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
     
     //MARK:- IBOutlets
     @IBOutlet weak var profileImage: UIImageView!
+    var selectedImage : String?
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var profileDescription: UILabel!
     @IBOutlet weak var availability: UILabel!
@@ -29,7 +30,11 @@ class ProfileViewController: UIViewController {
         availability.text = profileInfo?.availability
         services.text = profileInfo?.services
         wagePerHour.text = profileInfo?.wage
-        //profileImage.image = UIImage(named: profileInfo!.image)
+        if let imageToLoad = selectedImage {
+            profileImage.image = UIImage(named: imageToLoad)
+        }
+        //profileImage.image = UIImage(named: profileInfo?.image ?? "")
+        
     }
     
 }
