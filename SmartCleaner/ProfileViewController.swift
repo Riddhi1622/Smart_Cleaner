@@ -10,7 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     var profileInfo: Profile? = nil
-
+    
     
     //MARK:- IBOutlets
     @IBOutlet weak var profileImage: UIImageView!
@@ -24,17 +24,18 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        profileName.text = profileInfo?.name
-        profileDescription.text = profileInfo?.description
-        availability.text = profileInfo?.availability
-        services.text = profileInfo?.services
-        wagePerHour.text = profileInfo?.wage
-        if let imageToLoad = selectedImage {
-            profileImage.image = UIImage(named: imageToLoad)
-        }
-        //profileImage.image = UIImage(named: profileInfo?.image ?? "")
+        
+        /*   profileName.text = profileInfo?.name
+         profileDescription.text = profileInfo?.description
+         availability.text = profileInfo?.availability
+         services.text = profileInfo?.services
+         wagePerHour.text = profileInfo?.wage
+         if let imageToLoad = selectedImage {
+         profileImage.image = UIImage(named: imageToLoad)
+         }
+         //profileImage.image = UIImage(named: profileInfo?.image ?? "")
+         
+         }*/
         
     }
-    
 }
