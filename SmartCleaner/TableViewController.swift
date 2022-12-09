@@ -9,8 +9,9 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    @IBOutlet var searchprofiles: UISearchBar!
     //MARK-: IBOutlets
-    @IBOutlet weak var searchBar: UISearchBar!
+    
     
     let profiles = DBHelper().profiles
     var getProgiles: [Profile]!

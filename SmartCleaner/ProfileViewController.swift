@@ -25,17 +25,17 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*   profileName.text = profileInfo?.name
-         profileDescription.text = profileInfo?.description
-         availability.text = profileInfo?.availability
-         services.text = profileInfo?.services
-         wagePerHour.text = profileInfo?.wage
+         profileName?.text = profileInfo?.name
+         profileDescription?.text = profileInfo?.description
+         availability?.text = profileInfo?.availability
+         services?.text = profileInfo?.services
+         wagePerHour?.text = profileInfo?.wage
          if let imageToLoad = selectedImage {
-         profileImage.image = UIImage(named: imageToLoad)
+         profileImage?.image = UIImage(named: imageToLoad)
          }
          //profileImage.image = UIImage(named: profileInfo?.image ?? "")
          
-         }*/
+         }
         
     }
-}
+
